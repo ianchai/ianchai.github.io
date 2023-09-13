@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+}
+
+.title {
+  width: 100%;
+  padding: 20px;
+  background-color: black;
+  font-size: 1.5em;
+  color: white;
+}
+
+nav {
+  width: 100%;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.rowcenter {
+  align-items: center;
+}
+
+aside {
+  width: 30%;
+  padding: 20px;
+}
+
+aside img{
+  width: 100%;
+}
+
+main {
+  width: 70%;
+  padding: 20px;
+}
+
+.sect1, .sect2, .sect3, .sect1caption, .sect2caption, .sect3caption {
+  width: 33%;
+  padding: 20px;
+}
+
+.sect1, .sect2, .sect3 {
+  text-align: center;
+}
+
+.sect1 img, .sect3 img {
+  width: 66%;
+}
+
+.sect2 img {
+  width: 47%;
+}
+
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column;
+  }
+
+  aside {
+    width: 100%;
+    text-align: center;
+  }
+
+  aside img{
+    width: 50%;
+  }
+  
+  main {
+    width: 100%;
+  }
+
+  .sect1, .sect2, .sect3, .sect1caption, .sect2caption, .sect3caption {
+    width: 100%;
+  }
+  
+  .sect1 img, .sect3 img {
+    width: 45%;
+  }
+  
+  .sect2 img {
+    width: 32%;
+  }
+  
+  .sect1 {
+    order: 1;
+  }  
+
+  .sect1caption {
+    order: 2;
+  }
+
+  .sect2 {
+    order: 3;
+  }
+
+  .sect2caption {
+    order: 4;
+  }
+
+  .sect3 {
+    order: 5;
+  }
+
+  .sect3caption {
+    order: 6;
+  }
+}
